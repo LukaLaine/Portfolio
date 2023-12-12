@@ -1,0 +1,425 @@
+body{
+    background-color: #252530;
+    font-family: sans-serif;
+  
+}
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #262626;
+    height: 70px;
+    border-bottom: solid black 1px;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    align-items: center;
+    z-index: 1;
+}
+.buybutton{
+    display: flex;
+    align-items: center;
+    background-color: #82B440;
+    font-size: 14px;
+    padding: 5px 20px;
+    border-radius: 4px;
+    color: white;
+    height: 23px;
+    box-shadow: 0 2px 0 #6f9a37;
+    outline: none;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.logo{
+    height: 25px;
+    width: 162px;
+    margin-left: 15px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    align-items: center;
+}
+.link{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    margin-inline: 12px;
+    font-weight: bold;
+}
+.links img{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+.maito img{
+    height: 45px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.pictures{
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+}
+.big-picture img , .big-picture{
+    border-radius: 15px;
+    height: 500px;
+    width: 650px
+
+}
+.big-picture img{
+    cursor: pointer;
+}
+.first-row , .second-row{
+    display: flex;
+    height: 260px;
+}
+.first-row-image, .second-row-image{
+    border-radius: 15px;
+    margin: 10px;
+    width: 370px;
+    cursor: pointer;
+}
+.big-picture{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.big-picture:hover, .first-row-image:hover, .second-row-image:hover{
+    transform: translate(0, -3px);
+}
+.huge-image{
+    border: solid #252530;
+    margin-inline: auto;
+    margin-bottom: 50px;
+    background-image: url(huge_3.webp);
+    height: 500px;
+    width: 1200px;
+    border-radius: 20px;
+    color: white;
+    background-position: center;
+    background-size: 100%;
+    transition: 0.5s;
+}
+.huge-image:hover{
+    background-size: 104%;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+}
+.buttons{
+    width: fit-content;
+    height: fit-content;
+    margin-top: 120px;
+    margin-left: 10px;
+    padding: 3px;
+    border: solid #262626 2px;
+    border-radius: 20px;
+    padding-inline: 40px;
+    text-decoration: none;
+    color: #262626;
+}
+.buttons:hover{
+    background-color: #262626 ;
+    color: white;
+    transition:0.2s
+}
+.text1{
+    margin-top: 40px;
+    margin-left: 150px;
+    font-family: sans-serif;
+    font-size: 50px;
+    color: #262626;
+    font-weight: bold;
+}
+.img-footer{
+    margin-left: 150px;
+    margin-top: 70px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #262626;
+}
+.middle{
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: white;
+    margin-bottom: 30px;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 1200px;
+    height: 500px;
+}
+.medium-picture{
+    background:linear-gradient(to top, #3204fdba, #9907facc), url(medium.webp);
+    height: 500px;
+    width: 580px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-inline: 20px;
+}
+.medium-picture:hover{
+    background-size: 104%;
+    cursor: pointer;
+}
+.larger{
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.smaller{
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.second-box{
+    margin-left: 40px;
+    margin-top: 110px;
+}
+.buttons2{
+    width: fit-content;
+    height: fit-content;
+    margin-left: 10px;
+    padding: 3px;
+    border: solid #262626 2px;
+    border-radius: 20px;
+    padding-inline: 40px;
+    text-decoration: none;
+    color: #262626;
+}
+.buttons2:hover{
+    background-color: #262626 ;
+    color: white;
+    transition:0.2s
+}
+.semi-pictures{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 550px;
+    margin-top: 30px;
+
+}
+.semi{
+    background-image: url(semi-small.jpeg);
+    background-size: 100%;
+    height: 500px;
+    width: 360px;
+    margin-inline: 20px;
+    border-radius: 20px;
+}
+.semi:hover{
+    background-size: 104%;
+    cursor: pointer;
+}
+.semi p{
+    color: #262626;
+    position: relative;
+    top: 100px;
+}
+.buttons3{
+    width: fit-content;
+    height: fit-content;
+    margin-top: 50px;
+    margin-left: 10px;
+    padding: 3px;
+    border: solid #262626 2px;
+    border-radius: 20px;
+    padding-inline: 40px;
+    text-decoration: none;
+    color: #262626;
+    position: relative;
+    top: 80px;
+}
+.buttons3:hover{
+    background-color: #262626 ;
+    color: white;
+    transition:0.2s
+}
+.load-button{
+    color: white;
+    background: transparent;
+    padding-inline: 1200px;
+}
+.better-button{
+    display: flex;
+    justify-content: center;
+}
+.based-button{
+    background-color: #363643;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    color: white;  
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding-inline: 400px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border-radius: 20px;
+}
+.based-button:hover{
+    background-color: #FFB469;
+    width: 905px ;
+    transition: ease-in;
+    transition: ease-out;
+    transition: 0.2s;
+    color: #262626;
+}
+.hidden-boxes{
+    height: 600px;
+    width: 895px;
+    background-image: url(hidden-image.jpg);
+    display: none;
+}
+.central{
+    display: flex;
+    justify-content: center;
+}
+.bigtext{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'corben', serif;
+    text-shadow: 0px 1px, 1px 0px, 1px 1px;
+}
+.typewriter{
+    margin: auto;
+    width: fit-content;
+}
+.typewriter h1 {
+    font-size: 25px;
+    color: white;
+    overflow: hidden; 
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto; 
+    letter-spacing: .15em;
+    animation: 
+      typing  4s steps(44, end)  alternate infinite, 
+      blink-caret .75s step-end infinite;
+      animation-delay: 2s;
+  }
+
+    @keyframes typing {
+    0% { width: 0 }
+    25% { width: 0 }
+    75% { width: 410px }
+    100% { width: 410px }
+    }
+
+
+    @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  .ipgrapper input:focus{
+    animation: muutos 1s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+  }
+.ipgrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.ipgrapper input{
+    font-size: 25px;
+    padding-inline:30px;
+    text-align: center;
+    background-color:transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    cursor:pointer;
+    overflow: hidden;
+    color: white;  
+    box-shadow: none;
+    transition: 2s;
+    transition-delay: 1s;
+}
+@keyframes muutos {
+    from{width: 374px;}
+    to{width: 550px;}
+}
+.based-button1{
+    background-color: #363643;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    color: white;  
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding-inline: 80px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border-radius: 20px;
+}
+.based-button1:hover{
+    background-color: #FFB469;
+    width: 250px ;
+    transition: ease-in;
+    transition: ease-out;
+    transition: 0.2s;
+    color: #262626;
+}
+.load-button1{
+    color: white;
+    background: transparent;
+    padding-inline: 400px;
+}
+.better-button1{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+ 
+.footer_links a {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 12px;
+}
+ 
+.icons img {
+    margin-inline: 10px;
+}
+ 
+.footer_left, .footer_right {
+    margin-inline: 250px;
+}
+ 
+.footer_left p {
+    font-size: 12px;
+    color: rgba(84,82,96,255);
+}
+

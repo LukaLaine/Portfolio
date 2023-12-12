@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="topbar">
+        <img class="logo" src="logo.png" alt="">
+        <a class="buybutton" href="">Buy now</a>
+    </div>
+    <nav>
+        <a href="" class="maito"><img src="maido.svg" alt=""></a>
+        <div class="links">
+            <a class="link" href="">Home</a>
+            <a class="link" href="">Features</a>
+            <a class="link" href="">Style Guide</a>
+            <a class="link" href="">Contact</a>
+            <a class="link" href="">Newsletter</a>
+            <a class="link" href="">Demos</a>
+            <a class="link" href="">Get Theme</a>
+            <img src="search-13-32.png" alt="">
+        </div>
+    </nav>
+    <div class="pictures">
+        <div class="big-picture" onclick="location.href='';">
+            <img src="bigpicture.jpg" alt="">
+        </div>
+        <div class="small-pictures">
+            <div class="first-row">
+                <img onclick="location.href='';" class="first-row-image" src="smallpicture.jpg" alt="">
+                <img onclick="location.href='';" class="first-row-image" src="smallpicture.jpg" alt="">
+            </div>
+            <div class="second-row">
+                <img onclick="location.href='';" class="second-row-image" src="smallpicture.jpg" alt="">
+                <img onclick="location.href='';" class="second-row-image" src="smallpicture.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="huge-image">
+        <div class="container">
+                <a class="buttons" href="">Nappi</a>
+                <a class="buttons" href="">Nappi</a>
+        </div>
+        <div class="text1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="img-footer">
+            <p>By Luka Laine</p>
+        </div>
+    </div>
+    <div onclick="location.href='';" class="huge-image">
+        <div class="container">
+                <a class="buttons" href="">Nappi</a>
+                <a class="buttons" href="">Nappi</a>
+        </div>
+        <div class="text1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="img-footer">
+            <p>By Luka Laine</p>
+        </div>
+    </div>
+    <div onclick="location.href='';" class="huge-image">
+        <div class="container">
+                <a class="buttons" href="">Nappi</a>
+                <a class="buttons" href="">Nappi</a>
+        </div>
+        <div class="text1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="img-footer">
+            <p>By Luka Laine</p>
+        </div>
+    </div>
+    <p class="middle">YOU REALLY MUST SEE OUR EARLIER ARTICLES</p>
+    <div class="box">
+        <div onclick="location.href='';" class="medium-picture">
+            <div class="second-box">
+                <a class="buttons2" href="">Nappi</a>
+                <p class="larger">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="smaller">By Luka Laine</p>
+            </div>
+        </div>
+        <div onclick="location.href='';" class="medium-picture">
+            <div class="second-box">
+                <a class="buttons2" href="">Nappi</a>
+                <a class="buttons2" href="">Nappi</a>
+                <a class="buttons2" href="">Nappi</a>
+                <p class="larger">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="smaller">By Luka Laine</p>
+            </div>
+        </div>
+    </div>
+    <div class="semi-pictures">
+        <div onclick="location.href='';" class="semi">
+            <a class="buttons3" href="">Nappi</a>
+            <a class="buttons3" href="">Nappi</a>
+            <p class="larger">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="smaller">By Luka Laine</p>
+        </div>
+        <div onclick="location.href='';" class="semi">
+            <a class="buttons3" href="">Nappi</a>
+            <a class="buttons3" href="">Nappi</a>
+            <p class="larger">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="smaller">By Luka Laine</p>
+        </div>
+        <div onclick="location.href='';" class="semi">
+            <a class="buttons3" href="">Nappi</a>
+            <a class="buttons3" href="">Nappi</a>
+            <p class="larger">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="smaller">By Luka Laine</p>
+        </div>
+    </div>
+    <div class="central">
+        <div onclick="location.href='';" style="cursor: pointer;" id="zombie" class="hidden-boxes"></div>
+    </div>
+    <div id="zombie1" class="better-button">
+        <button class="based-button" onclick="hiddenrelease()" id="load-button">Load More</button>
+    </div>
+
+    <div class="bigtext">
+        <p>Subscribe to see what<br>we're thinking</p>
+    </div>
+    <div class="typewriter">
+        <h1>Start your day with Maido</h1>
+    </div>
+    <div class="ipgrapper">
+        <input type="email" placeholder="Your email address">
+    </div>
+    <script>
+        const hiddenrelease = () => {
+            document.getElementById("zombie").style.display = 'block'
+            document.getElementById("zombie1").style.display = 'none'
+        }
+    </script>
+        <div id="zombie2" class="better-button1">
+            <button id="load-button1" class="based-button1">Load More</button>
+        </div>
+
+        <footer>
+            <div class="footer_left">
+                <div class="footer_links">
+                    <a href="">Home</a>
+                    <a href="">Features</a>
+                    <a href="">Style Guide</a>
+                    <a href="">Contact</a>
+                    <a href="">Demos</a>
+                    <a href="">Get theme</a>
+                </div>
+                <p>MAIDO © 2023. ALL RIGHT RESERVED. PUBLISHED WITH GHOST & MAIDO.</p>
+            </div>
+            <div class="footer_right">
+                <div class="icons">
+                    <a href=""><img height="20px" src="x.png" alt=""></a>
+                    <a href=""><img height="20px" src="instagram.png" alt=""></a>
+                    <a href=""><img height="20px" src="facebook.png" alt=""></a>
+                    <a href=""><img height="20px" src="youtube.png" alt=""></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
