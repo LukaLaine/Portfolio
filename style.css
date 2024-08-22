@@ -1,7 +1,20 @@
+/* Global Styles */
+body {
+    width: 100%;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
 .sidebar {
     display: flex;
     flex-direction: column;
-    height: 100%; 
+    height: 100vh;
     width: 245px; 
     position: fixed;
     top: 0;
@@ -10,144 +23,196 @@
     padding-top: 20px;
     color: white;
     text-align: center;
-    float: left;
-  }
-.main{
-    background-color: #5c6177;
-    width: 100%;
-    margin-left: 237px;
 }
-.linkedin img{
-    height: 30px;
-}
-.links{
+
+.links {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
-.twitter img , .facebook img , .instagram img{
-    height: 35px;
+
+.sidebar img {
+    height: 30px;
 }
-body{
-    overflow-x: hidden;
-    width: 100%;
-    background-image: url(bg.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-.side-footer{
+
+.side-footer {
     font-size: 10px;
     margin-top: auto;
     margin-bottom: 20px;
+    padding: 0 10px;
 }
-.skills{
-    border: solid 1px #493D5F;
-    height: 500px;
+
+/* Main Content */
+.main {
+    margin-left: 245px;
+    padding: 20px;
+    background-color: #5c6177;
+    color: white;
+}
+
+.skills,
+.projects,
+.aboutme {
     background-color: #494D5F;
     color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.skills h1,
+.projects h1,
+.aboutme h1 {
+    margin-bottom: 20px;
+}
+
+.skillit p,
+.bar {
     font-size: 20px;
+    margin-bottom: 10px;
 }
-.skills h1{
-    margin-left: 50px;
-    margin-top: 40px;
-}
-.skillit p , .bar{
-    font-size: 20px;
-    margin-left: 30px;
-}
-.bar{
-    width: 500px;
+
+.bar {
+    width: 100%;
+    max-width: 500px;
     height: 10px;
     background-color: #6c738e;
+    border-radius: 5px;
+    overflow: hidden;
 }
-.bar1{
-    height: 100%;
+
+.bar1 {
+    height: 10px;
     width: 85%;
     background-color: aqua;
 }
-.bar2{
-    height: 100%;
+
+.bar2 {
+    height: 10px;
     width: 70%;
     background-color: aqua;
 }
-.bar3{
-    height: 100%;
+
+.bar3 {
+    height: 10px;
     width: 45%;
     background-color: aqua;
 }
-.bar4{
-    height: 100%;
+
+.bar4 {
+    height: 10px;
     width: 45%;
     background-color: aqua;
 }
-.projects{
+
+/* Projects Section */
+.projects {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 100px;
-    height: auto;
     width: 100%;
     background-color: #494D5F;
     color: white;
     font-size: 20px;
 }
-.projects img{
-    width: 300px;
-    height: 200px;
-    border-radius: 15px;
+
+.projects h1 {
+    margin-bottom: 40px;
 }
-.projects a{
-    margin-top: 50px;
-    width: 300px;
-    height: 200px;
-    border-radius: 15px;
-}
-.projects h1{
-    margin-left: 50px;
-    margin-top: 40px;
-}
-.container{
+
+.container {
     display: flex;
     flex-direction: row;
-    width: 100%;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
 }
-.first , .second , .third{
+
+.container > div {
     display: flex;
-    width: 300px;
-    margin-inline: 50px ;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     text-align: center;
-    align-items: center;
+    width: 300px;
 }
-.aboutme{
+
+.projects img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* About Me Section */
+.aboutme {
     display: flex;
     flex-direction: column;
     margin-top: 100px;
     height: 520px;
-    width: 100%;
     background-color: #494D5F;
     color: white;
     font-size: 20px;
 }
-.aboutme h1{
+
+.aboutme h1 {
     margin-left: 50px;
     margin-top: 40px;
 }
-.aboutme h2, .aboutme p{
+
+.aboutme h2, 
+.aboutme p {
     margin-left: 50px;
 }
-@media only screen and (max-width: 1645px){
 
- }
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
 
+    .main {
+        margin-left: 0;
+        padding-top: 20px;
+    }
 
+    .skills,
+    .projects,
+    .aboutme {
+        margin-top: 20px;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
 
+    .sidebar img {
+        height: 25px;
+    }
+}
 
+@media screen and (max-width: 480px) {
+    .sidebar h1 {
+        font-size: 24px;
+    }
 
+    .skills,
+    .projects,
+    .aboutme {
+        padding: 10px;
+    }
 
+    .projects img {
+        max-width: 100%;
+    }
 
-
-  
+    .bar {
+        max-width: 100%;
+    }
+}
