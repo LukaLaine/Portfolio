@@ -215,4 +215,7 @@ body {
     .bar {
         max-width: 100%;
     }
+    .aboutme{
+        height: auto;
+    }
 }
