@@ -165,7 +165,8 @@ nav{
     height: 500px;
 }
 .medium-picture{
-    background:linear-gradient(to top, #3204fdba, #9907facc), url(medium.webp);
+    background:linear-gradient(to top, #3204fdba, #9907facc), url(placeholder2.png);
+    background-position:center ;
     height: 500px;
     width: 580px;
     background-repeat: no-repeat;
@@ -219,7 +220,8 @@ nav{
 
 }
 .semi{
-    background-image: url(semi-small.jpeg);
+    background-image: url(placeholder2.png);
+    background-position:center ;
     background-size: 100%;
     height: 500px;
     width: 360px;
@@ -289,7 +291,7 @@ nav{
 .hidden-boxes{
     height: 600px;
     width: 895px;
-    background-image: url(hidden-image.jpg);
+    background-image: url(huge_3.webp);
     display: none;
 }
 .central{
