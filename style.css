@@ -1,28 +1,32 @@
-/* Global Styles */
 body {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    background-image: url(bg.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-image: url(globe-bg.jpg);
     background-size: cover;
-    margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
 }
-
-/* Sidebar */
-.sidebar {
+body,
+html{
+    margin: 0;
+    padding: 0;
+}
+.skill-holder{
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    width: 245px; 
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #040B14; 
-    padding-top: 20px;
-    color: white;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+}
+.skills {
+    width: fit-content;
+}
+.headers{
     text-align: center;
+}
+h1{
+    font-size: 80px;
+    font-family: Orbitron;
 }
 
 .links {
@@ -33,93 +37,21 @@ body {
     gap: 10px;
 }
 
-.sidebar img {
-    height: 30px;
-}
-
-.side-footer {
-    font-size: 10px;
-    margin-top: auto;
-    margin-bottom: 20px;
-    padding: 0 10px;
-}
-
-/* Main Content */
 .main {
-    margin-left: 245px;
+    width: 60%;
     padding: 20px;
-    background-color: #5c6177;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
     color: white;
 }
 
-.skills,
-.projects,
-.aboutme {
-    background-color: #494D5F;
-    color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-
-.skills h1,
-.projects h1,
-.aboutme h1 {
-    margin-bottom: 20px;
-}
-
-.skillit p,
-.bar {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.bar {
-    width: 100%;
-    max-width: 500px;
-    height: 10px;
-    background-color: #6c738e;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.bar1 {
-    height: 10px;
-    width: 85%;
-    background-color: aqua;
-}
-
-.bar2 {
-    height: 10px;
-    width: 70%;
-    background-color: aqua;
-}
-
-.bar3 {
-    height: 10px;
-    width: 45%;
-    background-color: aqua;
-}
-
-.bar4 {
-    height: 10px;
-    width: 45%;
-    background-color: aqua;
-}
-
-/* Projects Section */
 .projects {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 100px;
-    background-color: #494D5F;
     color: white;
     font-size: 20px;
-}
-
-.projects h1 {
-    margin-bottom: 40px;
 }
 
 .container {
@@ -147,74 +79,74 @@ body {
     border-radius: 15px;
 }
 
-/* About Me Section */
-.aboutme {
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-    height: 520px;
-    background-color: #494D5F;
-    color: white;
-    font-size: 20px;
-}
 
 .aboutme h1 {
     margin-left: 50px;
     margin-top: 40px;
 }
-
-.aboutme h2, 
-.aboutme p {
-    margin-left: 50px;
+.aboutme{
+    text-align: center;
+}
+.long-text{
+    padding-inline: 200px;
 }
 
-/* Responsive Adjustments */
 @media screen and (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
 
     .main {
-        margin-left: 0;
-        padding-top: 20px;
+        width: 90%;
+        padding: 10px;
     }
 
-    .skills,
-    .projects,
-    .aboutme {
-        margin-top: 20px;
+    h1 {
+        font-size: 6vw; /* Adjust heading size */
     }
-    
+
+    .long-text {
+        padding-inline: 5%;
+    }
+
+    .skills, 
+    .projects, 
+    .aboutme {
+        margin-top: 30px;
+    }
+
     .container {
         flex-direction: column;
-    }
-
-    .sidebar img {
-        height: 25px;
+        align-items: center;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .sidebar h1 {
-        font-size: 24px;
+
+    .main {
+        width: 95%;
+        padding: 10px;
     }
 
-    .skills,
-    .projects,
+    h1 {
+        font-size: 7vw; /* Adjust heading size */
+    }
+
+    .skills, 
+    .projects, 
     .aboutme {
         padding: 10px;
     }
 
     .projects img {
-        max-width: 100%;
+        width: 100%;
+        max-width: 200px;
+        height: auto;
     }
 
-    .bar {
-        max-width: 100%;
+    .container {
+        flex-direction: column;
     }
-    .aboutme{
-        height: auto;
+}
+@media screen and (max-width: 320px) {
+    li{
+        list-style: none;
     }
 }
